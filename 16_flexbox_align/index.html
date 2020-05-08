@@ -3,61 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox Basic</title>
+  <title>Document</title>
   <style>
     * {
+      padding: 0;
+      margin: 0;
       box-sizing: border-box;
     }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
 
     .flex-container {
       display: flex;
       flex-direction: row;
-      /* align-items: center; */
-      justify-content: space-between;
+      align-items: center;
+      justify-content: center;
       background-color: #f4f4f4;
-      height: 50vh;
+    }
+
+    .flex-container.flex-reverse {
+      flex-direction: row-reverse;
     }
 
     .item {
-      border: 1px #ccc solid;
+      color: #333;
+      border: 2px #333 solid;
       background-color: #f4f4f4;
-      padding: 10px;
-      margin: 10px;
-      text-align: center;
-      border-radius: 10px;
-      flex: 1;
+      padding: 10px 20px;
     }
 
-    /* .item-1 {
-      align-self: flex-start;
+    .flex-container .item-1,
+    .flex-container .item-2 {
+      height: 100vh;
+    }
+
+    .item-1 {
+      display: flex;
+      background: url('https://source.unsplash.com/daily') center center/cover;
+      flex: 1;
+      align-items: center;
+      color: #fff;
     }
     
-    .item-3 {
-      align-self: flex-end;
-    } */
+    .item-2 {
+      display: flex;
+      background: url('https://source.unsplash.com/user/erondu/daily') center center/cover;
+      flex: 2;
+      align-items: flex-end;
+      width: 100%;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
-  <div class="flex-container">
-    <div class="item item-1">
-      <h3>
-        Item 1
-      </h3>
+  <section>
+    <div class="flex-container">
+      <div class="item item-1">
+        <h1>
+          Item 1
+        </h1>
+      </div>
+      <div class="item item-2">
+        Hello WOrld
+      </div>
     </div>
-    <div class="item item-2">
-      <h3>
-        Item 2
-      </h3>
-    </div>
-    <div class="item item-3">
-      <h3>
-        Item 3
-      </h3>
-    </div>
-  </div>
+  </section>
 </body>
 </html>
