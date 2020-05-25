@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Shadow</title>
+    <style>
+      h1 {
+        font-size: 4rem;
+      }
+
+      /* X - Y - Color */
+      h1.a {
+        text-shadow: 3px 3px grey;
+      }
+
+      /* X - Y - Blur - Color */
+      h1.b {
+        text-shadow: 3px 3px 3px grey;
+      }
+
+      /* X - Y - Blur - Color | White Text */
+      h1.c {
+        color: #fff;
+        text-shadow: 3px 3px 3px black;
+      }
+
+      /* X - Y - Blur - Color | Negative */
+      h1.d {
+        text-shadow: -3px -3px 1px grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="a">Huda Prasetyo</h1>
+    <h1 class="b">Huda Prasetyo</h1>
+    <h1 class="c">Huda Prasetyo</h1>
+    <h1 class="d">Huda Prasetyo</h1>
+  </body>
+</html>
