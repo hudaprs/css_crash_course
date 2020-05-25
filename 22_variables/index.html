@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables</title>
+    <style>
+      :root {
+        --primary-color: #333;
+        --secondary-color: #ccc;
+        --background-color: #f4f4f4;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4;
+        background-color: var(--background-color);
+      }
+
+      header {
+        background-color: var(--primary-color);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 2px var(--secondary-color) solid;
+        margin-bottom: 10px;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+      }
+
+      .box {
+        background-color: var(--primary-color);
+        padding: 20px;
+        margin: 10px;
+        border-bottom: 2px var(--secondary-color) solid;
+        color: #fff;
+      }
+
+      .box-1 {
+        flex: 1;
+      }
+
+      .box-2 {
+        flex: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CSS Variables</h1>
+    </header>
+
+    <div class="container">
+      <div class="box box-1">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          tenetur, adipisci impedit suscipit quos commodi amet libero harum
+          maiores officia.
+        </p>
+      </div>
+      <div class="box box-2">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          tenetur, adipisci impedit suscipit quos commodi amet libero harum
+          maiores officia.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
