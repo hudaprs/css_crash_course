@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Targeted Selectors</title>
+    <style>
+      div > p {
+        background: #ddd;
+        color: #333;
+      }
+
+      div + p {
+        background: #ccc;
+        color: #333;
+      }
+
+      a[target="_blank"] {
+        background-color: #ff0000;
+        color: #fff;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, sint?
+      </p>
+
+      <ul>
+        <li>Item 1</li>
+        <li><p>Item 2</p></li>
+        <li>Item 3</li>
+      </ul>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, magni?
+      </p>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, magni?
+    </p>
+
+    <a href="#">Link 1</a> | <a href="#" target="_self">Link 2</a> |
+    <a href="https://google.com" target="_blank">Google</a>
+
+    <br /><br /><br />
+
+    <form>
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email" />
+      <input type="button" value="Submit" />
+    </form>
+  </body>
+</html>
